@@ -5,7 +5,7 @@ const projects = [
       "Built a production-driven electricity cost model with seasonality and lag factors; January forecast was within ~2% of predicted bill variance.",
     tech: ["Forecast Modeling", "Variance Analysis", "Excel", "Operations Data"],
     liveUrl: "Delta_Electricity.pptx",
-    githubUrl: "TRANG_HOANG_0226.pdf",
+    githubUrl: "TRANG HOANG.pdf",
   },
   {
     title: "Cost Optimization Strategy (Delta Utilities)",
@@ -13,23 +13,23 @@ const projects = [
       "Identified annual savings levers through energy-intensity and peak-demand controls, with estimated impact ranges of $9K-$15K and $8K-$12K per year.",
     tech: ["Cost Modeling", "Demand Analysis", "Scenario Planning"],
     liveUrl: "Delta_Electricity.pptx",
-    githubUrl: "TRANG_HOANG_0226.pdf",
+    githubUrl: "TRANG HOANG.pdf",
   },
   {
     title: "Finance Operations KPI System (Sunrise Soya Foods)",
     description:
       "Analyzed 3M+ data points and built KPI reporting workflows that reduced monthly manual reporting by 5 hours while improving management visibility.",
     tech: ["Python", "Excel", "Business Central", "KPI Dashboards"],
-    liveUrl: "TRANG_HOANG_0226.pdf",
-    githubUrl: "TRANG_HOANG_0226.pdf",
+    liveUrl: "TRANG HOANG.pdf",
+    githubUrl: "TRANG HOANG.pdf",
   },
   {
     title: "Predictive Budget Forecasting",
     description:
       "Developed forecasting models for operations and cost projections that improved budget accuracy by 13% and supported planning decisions affecting ~$2M.",
     tech: ["Python", "Forecasting", "Financial Planning", "Variance Tracking"],
-    liveUrl: "TRANG_HOANG_0226.pdf",
-    githubUrl: "TRANG_HOANG_0226.pdf",
+    liveUrl: "TRANG HOANG.pdf",
+    githubUrl: "TRANG HOANG.pdf",
   },
 ];
 
