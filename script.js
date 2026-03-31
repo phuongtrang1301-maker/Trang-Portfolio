@@ -1,33 +1,33 @@
 const projects = [
   {
-    title: "Delta Plant Electricity Forecast Model (2026)",
+    title: "Growth and Operations Strategy for Pho & Roll",
     description:
-      "Built a production-driven electricity cost model with seasonality and lag factors; January forecast was within ~2% of predicted bill variance.",
-    tech: ["Forecast Modeling", "Variance Analysis", "Excel", "Operations Data"],
-    liveUrl: "Delta_Electricity.pptx",
+      "Combined customer insight, business analysis, and operational data to support expansion planning, improve internal workflows, and create clearer visibility across sales, labour, and customer performance.",
+    tech: ["Growth Strategy", "Operations Analysis", "Customer Insight", "Excel"],
+    liveUrl: "https://dailyhive.com/vancouver/pho-and-roll-vancouver",
     githubUrl: "TRANG HOANG.pdf",
   },
   {
-    title: "Cost Optimization Strategy (Delta Utilities)",
+    title: "Media and Influencer Marketing Campaigns",
     description:
-      "Identified annual savings levers through energy-intensity and peak-demand controls, with estimated impact ranges of $9K-$15K and $8K-$12K per year.",
-    tech: ["Cost Modeling", "Demand Analysis", "Scenario Planning"],
-    liveUrl: "Delta_Electricity.pptx",
+      "Supported editorial coverage and creator partnerships to grow awareness for Pho & Roll, using brand storytelling and social-first content to strengthen credibility and attract new audiences.",
+    tech: ["Media Partnerships", "Influencer Marketing", "Brand Storytelling"],
+    liveUrl: "https://vanmag.com/taste/restaurants/this-modern-vietnamese-restaurant-is-perfect-for-your-next-corporate-event/",
     githubUrl: "TRANG HOANG.pdf",
   },
   {
-    title: "Finance Operations KPI System (Sunrise Soya Foods)",
+    title: "Consumer Insight Dashboard for Beats by Dre",
     description:
-      "Analyzed 3M+ data points and built KPI reporting workflows that reduced monthly manual reporting by 5 hours while improving management visibility.",
-    tech: ["Python", "Excel", "Business Central", "KPI Dashboards"],
-    liveUrl: "TRANG HOANG.pdf",
+      "Used Perplexity-led market research and AI-assisted analysis to turn product feedback into pain points, comparative themes, and positioning opportunities that support clearer brand decisions.",
+    tech: ["Consumer Research", "Market Research", "Perplexity", "Dashboard Design"],
+    liveUrl: "pain-points-dashboard.png",
     githubUrl: "TRANG HOANG.pdf",
   },
   {
-    title: "Predictive Budget Forecasting",
+    title: "Business Performance Reporting at Sunrise Soya Foods",
     description:
-      "Developed forecasting models for operations and cost projections that improved budget accuracy by 13% and supported planning decisions affecting ~$2M.",
-    tech: ["Python", "Forecasting", "Financial Planning", "Variance Tracking"],
+      "Built KPI dashboards and forecasting workflows using large operational datasets to improve reporting visibility, support planning decisions, and reduce manual work across finance operations.",
+    tech: ["Performance Reporting", "Forecasting", "KPI Dashboards", "Process Improvement"],
     liveUrl: "TRANG HOANG.pdf",
     githubUrl: "TRANG HOANG.pdf",
   },
