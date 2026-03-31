@@ -27,7 +27,7 @@ const projects = [
     title: "Business Performance Reporting at Sunrise Soya Foods",
     description:
       "Built KPI dashboards and forecasting workflows using large operational datasets to improve reporting visibility, support planning decisions, and reduce manual work across finance operations.",
-    tech: ["Performance Reporting", "Forecasting", "KPI Dashboards", "Process Improvement"],
+    tech: ["Performance Reporting", "Forecasting", "KPI Dashboards", "Regression Analysis", "Process Improvement"],
     liveUrl: "TRANG HOANG.pdf",
     githubUrl: "TRANG HOANG.pdf",
   },
@@ -39,19 +39,30 @@ function renderProjects() {
 
   list.innerHTML = projects
     .map(
-      (project) => `
+      (project) => {
+        const hasSeparateCaseMaterial = project.liveUrl && project.liveUrl !== project.githubUrl;
+        const links = hasSeparateCaseMaterial
+          ? `
+        <div class="project-links">
+          <a href="${project.liveUrl}" target="_blank" rel="noreferrer">Case Material</a>
+          <a href="${project.githubUrl}" target="_blank" rel="noreferrer">Resume Context</a>
+        </div>`
+          : `
+        <div class="project-links">
+          <a href="${project.githubUrl}" target="_blank" rel="noreferrer">Resume Context</a>
+        </div>`;
+
+        return `
       <article class="project-card">
         <h3>${project.title}</h3>
         <p>${project.description}</p>
         <div class="project-tech">
           ${project.tech.map((item) => `<span>${item}</span>`).join("")}
         </div>
-        <div class="project-links">
-          <a href="${project.liveUrl}" target="_blank" rel="noreferrer">Case Material</a>
-          <a href="${project.githubUrl}" target="_blank" rel="noreferrer">Resume Context</a>
-        </div>
+        ${links}
       </article>
-    `
+    `;
+      }
     )
     .join("");
 }
