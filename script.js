@@ -38,6 +38,14 @@ const projects = [
     tech: ["Forecasting", "Cost Optimization", "Operations Analysis", "Excel"],
     liveUrl: "delta-forecast-chart.png",
     githubUrl: "https://github.com/phuongtrang1301-maker/Trang-Portfolio/blob/main/Electricity_729_Powell_Model_V3.ipynb",
+    liveLabel: "Forecast Chart",
+    githubLabel: "Model Notebook",
+    extraLinks: [
+      {
+        href: "Delta_Electricity.pptx",
+        label: "PowerPoint",
+      },
+    ],
   },
 ];
 
@@ -48,16 +56,30 @@ function renderProjects() {
   list.innerHTML = projects
     .map(
       (project) => {
+        const primaryLabel = project.liveLabel || "Case Material";
+        const secondaryLabel = project.githubLabel || "Resume Context";
         const hasSeparateCaseMaterial = project.liveUrl && project.liveUrl !== project.githubUrl;
         const links = hasSeparateCaseMaterial
           ? `
         <div class="project-links">
-          <a href="${project.liveUrl}" target="_blank" rel="noreferrer">Case Material</a>
-          <a href="${project.githubUrl}" target="_blank" rel="noreferrer">Resume Context</a>
+          <a href="${project.liveUrl}" target="_blank" rel="noreferrer">${primaryLabel}</a>
+          <a href="${project.githubUrl}" target="_blank" rel="noreferrer">${secondaryLabel}</a>
+          ${(project.extraLinks || [])
+            .map(
+              (link) =>
+                `<a href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
+            )
+            .join("")}
         </div>`
           : `
         <div class="project-links">
-          <a href="${project.githubUrl}" target="_blank" rel="noreferrer">Resume Context</a>
+          <a href="${project.githubUrl}" target="_blank" rel="noreferrer">${secondaryLabel}</a>
+          ${(project.extraLinks || [])
+            .map(
+              (link) =>
+                `<a href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
+            )
+            .join("")}
         </div>`;
 
         return `
