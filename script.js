@@ -31,6 +31,14 @@ const projects = [
     liveUrl: "TRANG HOANG.pdf",
     githubUrl: "TRANG HOANG.pdf",
   },
+  {
+    title: "Delta Utilities Forecasting and Cost Optimization",
+    description:
+      "Built an electricity forecasting and cost optimization model for the Delta plant, using production and demand patterns to support planning decisions and identify annual savings opportunities.",
+    tech: ["Forecasting", "Cost Optimization", "Operations Analysis", "Excel"],
+    liveUrl: "Delta_Electricity.pptx",
+    githubUrl: "TRANG HOANG.pdf",
+  },
 ];
 
 function renderProjects() {
