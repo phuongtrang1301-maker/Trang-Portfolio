@@ -8,40 +8,6 @@ const projects = [
     liveLabel: "Project Coverage",
   },
   {
-    title: "Media and Influencer Marketing Campaigns",
-    description:
-      "Supported editorial placements and creator partnerships to build awareness for Pho & Roll, using third-party credibility and social content to strengthen brand visibility and attract new audiences.",
-    tech: ["Media Partnerships", "Influencer Marketing", "Brand Awareness"],
-    liveUrl: "https://vanmag.com/taste/restaurants/this-modern-vietnamese-restaurant-is-perfect-for-your-next-corporate-event/",
-    liveLabel: "Campaign Example",
-    extraLinks: [
-      {
-        href: "https://www.instagram.com/p/DKWTr_2RJw2/",
-        label: "Influencer Post 1",
-      },
-      {
-        href: "https://www.instagram.com/p/C-4QSmOR43-/",
-        label: "Influencer Post 2",
-      },
-    ],
-  },
-  {
-    title: "Event Coordination and Brand Experience",
-    description:
-      "Supported event coordination and guest-facing execution for Pho & Roll, shaping the in-person experience so the brand felt polished, memorable, and aligned with corporate and group dining positioning.",
-    tech: ["Event Coordination", "Brand Experience", "Guest Experience", "Execution"],
-    liveUrl: "https://www.instagram.com/p/DLd0SuDReFr/?img_index=1",
-    liveLabel: "Event Example",
-  },
-  {
-    title: "Consumer Insight Dashboard for Beats by Dre",
-    description:
-      "Used Perplexity-led market research and AI-assisted analysis to turn product feedback into pain points, comparative themes, and positioning opportunities that support clearer brand decisions.",
-    tech: ["Consumer Research", "Market Research", "Perplexity", "Dashboard Design"],
-    liveUrl: "pain-points-dashboard.png",
-    liveLabel: "Dashboard Image",
-  },
-  {
     title: "Business Performance Reporting at Sunrise Soya Foods",
     description:
       "Built KPI dashboards and forecasting workflows using large operational datasets to improve reporting visibility, support planning decisions, and reduce manual work across finance operations.",
@@ -65,6 +31,14 @@ const projects = [
         label: "PowerPoint",
       },
     ],
+  },
+  {
+    title: "Customer Insight and Brand Positioning for Beats by Dre",
+    description:
+      "Turned customer feedback into structured pain points, comparative themes, and positioning opportunities through market research and dashboard-based analysis.",
+    tech: ["Consumer Insight", "Brand Positioning", "Perplexity", "Dashboard Design"],
+    liveUrl: "pain-points-dashboard.png",
+    liveLabel: "Insight Dashboard",
   },
 ];
 
