@@ -8,6 +8,32 @@ const projects = [
     liveLabel: "Project Coverage",
   },
   {
+    title: "Media and Influencer Marketing Campaigns",
+    description:
+      "Supported editorial placements and creator partnerships to build awareness for Pho & Roll, using third-party credibility and social content to strengthen brand visibility and attract new audiences.",
+    tech: ["Media Partnerships", "Influencer Marketing", "Brand Awareness"],
+    liveUrl: "https://vanmag.com/taste/restaurants/this-modern-vietnamese-restaurant-is-perfect-for-your-next-corporate-event/",
+    liveLabel: "Media Coverage",
+    extraLinks: [
+      {
+        href: "https://www.instagram.com/p/DKWTr_2RJw2/",
+        label: "Influencer Post 1",
+      },
+      {
+        href: "https://www.instagram.com/p/C-4QSmOR43-/",
+        label: "Influencer Post 2",
+      },
+    ],
+  },
+  {
+    title: "Event Coordination and Brand Experience",
+    description:
+      "Supported event coordination and guest-facing execution for Pho & Roll, shaping the in-person experience so the brand felt polished, memorable, and aligned with corporate and group dining positioning.",
+    tech: ["Event Coordination", "Brand Experience", "Guest Experience", "Execution"],
+    liveUrl: "https://www.instagram.com/p/DLd0SuDReFr/?img_index=1",
+    liveLabel: "Event Example",
+  },
+  {
     title: "Business Performance Reporting at Sunrise Soya Foods",
     description:
       "Built KPI dashboards and forecasting workflows using large operational datasets to improve reporting visibility, support planning decisions, and reduce manual work across finance operations.",
