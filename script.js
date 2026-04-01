@@ -10,20 +10,28 @@ const projects = [
   {
     title: "Media and Influencer Marketing Campaigns",
     description:
-      "Supported editorial coverage and creator partnerships to grow awareness for Pho & Roll, using brand storytelling and social-first content to strengthen credibility and attract new audiences.",
-    tech: ["Media Partnerships", "Influencer Marketing", "Brand Storytelling"],
+      "Supported editorial placements and creator partnerships to build awareness for Pho & Roll, using third-party credibility and social content to strengthen brand visibility and attract new audiences.",
+    tech: ["Media Partnerships", "Influencer Marketing", "Brand Awareness"],
     liveUrl: "https://vanmag.com/taste/restaurants/this-modern-vietnamese-restaurant-is-perfect-for-your-next-corporate-event/",
     liveLabel: "Campaign Example",
     extraLinks: [
       {
-        href: "https://www.instagram.com/p/DT3gKjEkoz6/",
-        label: "Instagram Post",
+        href: "https://www.instagram.com/p/DKWTr_2RJw2/",
+        label: "Influencer Post 1",
       },
       {
-        href: "https://www.instagram.com/reels/C9yim7FxLLG/",
-        label: "Instagram Reel",
+        href: "https://www.instagram.com/p/C-4QSmOR43-/",
+        label: "Influencer Post 2",
       },
     ],
+  },
+  {
+    title: "Event Coordination and Brand Experience",
+    description:
+      "Supported event coordination and guest-facing execution for Pho & Roll, shaping the in-person experience so the brand felt polished, memorable, and aligned with corporate and group dining positioning.",
+    tech: ["Event Coordination", "Brand Experience", "Guest Experience", "Execution"],
+    liveUrl: "https://www.instagram.com/p/DLd0SuDReFr/?img_index=1",
+    liveLabel: "Event Example",
   },
   {
     title: "Consumer Insight Dashboard for Beats by Dre",
