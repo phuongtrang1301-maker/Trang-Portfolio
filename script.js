@@ -36,8 +36,8 @@ const projects = [
     description:
       "Built an electricity forecasting and cost optimization model for the Delta plant, using production and demand patterns to support planning decisions and identify annual savings opportunities.",
     tech: ["Forecasting", "Cost Optimization", "Operations Analysis", "Excel"],
-    liveUrl: "Delta_Electricity.pptx",
-    githubUrl: "TRANG HOANG.pdf",
+    liveUrl: "delta-forecast-chart.png",
+    githubUrl: "https://github.com/phuongtrang1301-maker/Trang-Portfolio/blob/main/Electricity_729_Powell_Model_V3.ipynb",
   },
 ];
 
