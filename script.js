@@ -45,7 +45,7 @@ const projects = [
     description:
       "Built an Excel-based model that automated electricity cost calculations from production inputs for the 729 Powell site, then translated the results into a presentation that explained the main cost drivers and supported operational decision-making.",
     tech: ["Excel Automation", "Cost Analysis", "Production Planning", "PowerPoint"],
-    liveUrl: "powell_2026_analysis_electricity_729.pptx",
+    liveUrl: "powell_2026_analysis_electricity_729.pdf",
     liveLabel: "Cost Driver Deck",
     extraLinks: [
       {
