@@ -34,17 +34,10 @@ const projects = [
     liveLabel: "Event Example",
   },
   {
-    title: "Business Performance Reporting at Sunrise Soya Foods",
+    title: "Business Performance Reporting and Cost Automation at Sunrise Soya Foods",
     description:
-      "Built KPI dashboards and forecasting workflows using large operational datasets to improve reporting visibility, support planning decisions, and reduce manual work across finance operations.",
-    tech: ["Performance Reporting", "Forecasting", "KPI Dashboards", "Regression Analysis", "Process Improvement"],
-    liveUrl: "",
-  },
-  {
-    title: "729 Powell Electricity Cost Automation and Driver Analysis",
-    description:
-      "Built an Excel-based model that automated electricity cost calculations from production inputs for the 729 Powell site, then translated the results into a presentation that explained the main cost drivers and supported operational decision-making.",
-    tech: ["Excel Automation", "Cost Analysis", "Production Planning", "PowerPoint"],
+      "Built KPI dashboards, forecasting workflows, and an Excel-based electricity cost model using large operational datasets at Sunrise Soya Foods. I automated cost calculations from production inputs for a manufacturing site and translated the results into a presentation that explained the main cost drivers and supported operational decision-making.",
+    tech: ["Performance Reporting", "Forecasting", "KPI Dashboards", "Excel Automation", "Cost Analysis"],
     liveUrl: "powell_2026_analysis_electricity_729.pdf",
     liveLabel: "Cost Driver Deck",
     extraLinks: [
