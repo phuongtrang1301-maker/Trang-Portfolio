@@ -41,20 +41,16 @@ const projects = [
     liveUrl: "",
   },
   {
-    title: "Delta Utilities Forecasting and Cost Optimization",
+    title: "729 Powell Electricity Cost Automation and Driver Analysis",
     description:
-      "Built an electricity forecasting and cost optimization model for the Delta plant, using production and demand patterns to support planning decisions and identify annual savings opportunities.",
-    tech: ["Forecasting", "Cost Optimization", "Operations Analysis", "Excel"],
-    liveUrl: "delta-forecast-chart.png",
-    liveLabel: "Forecast Chart",
+      "Built an Excel-based model that automated electricity cost calculations from production inputs for the 729 Powell site, then translated the results into a presentation that explained the main cost drivers and supported operational decision-making.",
+    tech: ["Excel Automation", "Cost Analysis", "Production Planning", "PowerPoint"],
+    liveUrl: "powell_2026_analysis_electricity_729.pptx",
+    liveLabel: "Cost Driver Deck",
     extraLinks: [
       {
-        href: "https://github.com/phuongtrang1301-maker/Trang-Portfolio/blob/main/Electricity_729_Powell_Model_V3.ipynb",
-        label: "Model Notebook",
-      },
-      {
-        href: "Delta_Electricity.pptx",
-        label: "PowerPoint",
+        href: "729 Powell Electricity Forecast.xlsx",
+        label: "Automated Excel Model",
       },
     ],
   },
