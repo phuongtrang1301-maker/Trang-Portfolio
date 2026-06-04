@@ -1,18 +1,18 @@
 const projects = [
   {
-    title: "Growth Strategy and Expansion Plan for Pho & Roll",
+    title: "Growth Strategy & Expansion Plan — Pho & Roll",
     description:
-      "Led the market analysis, customer insight, and demand forecasting behind a business plan that secured roughly $220K in expansion funding for a second location, and built the reporting that gave clearer visibility across sales, labour, and customer performance.",
-    tech: ["Business Planning", "Demand Forecasting", "Customer Insight", "Excel"],
+      "Led the market analysis, customer insight, and demand forecasting behind a business plan that secured ~$220K in expansion funding for a second location. Coordinated across operations, finance, and marketing to build the financial model and pitch deck.",
+    tech: ["Business Planning", "Demand Forecasting", "Customer Insight", "Excel", "Financial Modelling"],
     liveUrl: "https://dailyhive.com/vancouver/pho-and-roll-vancouver",
     liveLabel: "Project Coverage",
   },
   {
-    title: "Corporate Booking Campaign and Media Partnerships",
+    title: "Corporate Booking Campaign & Media Partnerships",
     description:
-      "Designed and sold a corporate booking campaign for Pho & Roll using paid editorial in Daily Hive and Vancouver Magazine plus creator partnerships, generating $10K in revenue on $6.5K of spend (1.54x ROAS) and building credibility with new corporate and group audiences.",
-    tech: ["Campaign Strategy", "Media Partnerships", "Influencer Marketing", "ROAS"],
-    liveUrl: "https://vanmag.com/taste/restaurants/this-modern-vietnamese-restaurant-is-perfect-for-your-next-corporate-event/",
+      "Designed, sold, and executed a corporate booking campaign using paid editorial placements (Daily Hive, Vancouver Magazine) and social media influencer partnerships. Generated $10K in revenue on $6.5K of spend (1.54x ROAS). Managed cross-functional coordination between media partners, operations, and front-of-house teams.",
+    tech: ["Campaign Strategy", "Media Partnerships", "Influencer Marketing", "ROAS", "Paid Media"],
+    liveUrl: "https://vanmag.com/taste/restaurants/this-modern-vietnamese-restaurant-wants-to-be-your-next-favourite",
     liveLabel: "Media Coverage",
     extraLinks: [
       {
@@ -26,26 +26,26 @@ const projects = [
     ],
   },
   {
-    title: "Catering and Event Sales",
+    title: "Catering & Event Sales — Pipeline Management",
     description:
-      "Managed the inbound catering and event sales pipeline end to end, closing two summer 2025 weddings worth $10K through agenda-setting, follow-ups, and stakeholder coordination, while shaping a guest experience aligned with the brand's corporate and group-dining positioning.",
-    tech: ["Account Management", "Sales Pipeline", "Stakeholder Coordination", "Event Execution"],
+      "Managed the full inbound catering and event sales pipeline end-to-end, closing two summer 2025 weddings worth $10K. Responsibilities included agenda-setting, follow-up cadences, stakeholder coordination across vendors and venue partners, and contract execution.",
+    tech: ["Account Management", "Sales Pipeline", "Stakeholder Coordination", "Event Planning"],
     liveUrl: "https://www.instagram.com/p/DLd0SuDReFr/?img_index=1",
     liveLabel: "Event Example",
   },
   {
-    title: "Customer Insight and Brand Positioning for Beats by Dre",
+    title: "Consumer Insight & Brand Positioning — Beats by Dre",
     description:
-      "Turned customer feedback into structured pain points, comparative themes, and positioning opportunities through market research and dashboard-based analysis, and delivered brand positioning recommendations to Beats by Dre leadership.",
-    tech: ["Consumer Insight", "Brand Positioning", "Market Research", "Dashboard Design"],
+      "Turned customer feedback into structured pain points, comparative themes, and actionable brand positioning recommendations delivered to Beats by Dre leadership. Built an AI-powered dashboard (OpenAI, Perplexity, Replit) to segment survey data and surface consumer insights — translating raw data into a clear selling story for the brand team.",
+    tech: ["Consumer Insight", "Brand Positioning", "Market Research", "Dashboard Design", "AI Tools"],
     liveUrl: "pain-points-dashboard.png",
     liveLabel: "Insight Dashboard",
   },
   {
-    title: "Business Performance Reporting and Cost Automation at Sunrise Soya Foods",
+    title: "Business Performance Reporting & Cost Forecasting — Sunrise Soya Foods",
     description:
-      "Built KPI dashboards, forecasting workflows, and an Excel-based electricity cost model from large operational datasets at Sunrise Soya Foods, a consumer goods manufacturer. I automated cost calculations from production inputs for one site and translated the results into a presentation that explained the main cost drivers and supported operational decisions.",
-    tech: ["Performance Reporting", "Forecasting", "KPI Dashboards", "Excel Automation", "Cost Analysis"],
+      "Built KPI dashboards, forecasting workflows, and an Excel-based electricity cost model for a multi-facility food manufacturer. Developed a regression-based (OLS) utilities forecasting model in Python across 3 facilities, reducing the gap between predicted and actual utility costs by 2%. Automated manual Excel reporting, saving 5+ hours per accrual cycle. Coordinated with finance and operations teams to clean and integrate 3M+ records across ERP and production systems.",
+    tech: ["Performance Reporting", "Forecasting", "KPI Dashboards", "Excel Automation", "Python (OLS)"],
     liveUrl: "powell_2026_analysis_electricity_729.pdf",
     liveLabel: "Cost Driver Deck",
     extraLinks: [
@@ -74,52 +74,43 @@ function renderProjects() {
               `<a href="${link.href}" target="_blank" rel="noreferrer">${link.label}</a>`
           )
           .join("");
-        const links = primaryLink || extraLinks ? `
-        <div class="project-links">
-          ${primaryLink}
-          ${extraLinks}
-        </div>` : "";
-
-        return `
-      <article class="project-card">
-        <h3>${project.title}</h3>
-        <p>${project.description}</p>
-        <div class="project-tech">
-          ${project.tech.map((item) => `<span>${item}</span>`).join("")}
-        </div>
-        ${links}
-      </article>
-    `;
+        return `<li class="project-card">
+          <div class="project-header">
+            <h3>${project.title}</h3>
+          </div>
+          <p>${project.description}</p>
+          <div class="tech-tags">
+            ${project.tech.map((t) => `<span>${t}</span>`).join("")}
+          </div>
+          <div class="project-links">
+            ${primaryLink}
+            ${extraLinks}
+          </div>
+        </li>`;
       }
     )
     .join("");
 }
 
 function setYear() {
-  const year = document.querySelector("#year");
-  if (year) year.textContent = String(new Date().getFullYear());
+  const el = document.getElementById("year");
+  if (el) el.textContent = new Date().getFullYear();
 }
 
-function setupReveal() {
-  const sections = document.querySelectorAll(".reveal");
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
-
-  sections.forEach((section, index) => {
-    section.style.transitionDelay = `${index * 90}ms`;
-    observer.observe(section);
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".reveal");
+  const windowHeight = window.innerHeight;
+  reveals.forEach((el) => {
+    const top = el.getBoundingClientRect().top;
+    if (top < windowHeight - 80) {
+      el.classList.add("visible");
+    }
   });
 }
 
-renderProjects();
-setYear();
-setupReveal();
+document.addEventListener("DOMContentLoaded", () => {
+  renderProjects();
+  setYear();
+  revealOnScroll();
+  window.addEventListener("scroll", revealOnScroll, { passive: true });
+});
