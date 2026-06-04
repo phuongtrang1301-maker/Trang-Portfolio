@@ -1,17 +1,17 @@
 const projects = [
   {
-    title: "Growth and Operations Strategy for Pho & Roll",
+    title: "Growth Strategy and Expansion Plan for Pho & Roll",
     description:
-      "Combined customer insight, business analysis, and operational data to support expansion planning, improve internal workflows, and create clearer visibility across sales, labour, and customer performance.",
-    tech: ["Growth Strategy", "Operations Analysis", "Customer Insight", "Excel"],
+      "Led the market analysis, customer insight, and demand forecasting behind a business plan that secured roughly $220K in expansion funding for a second location, and built the reporting that gave clearer visibility across sales, labour, and customer performance.",
+    tech: ["Business Planning", "Demand Forecasting", "Customer Insight", "Excel"],
     liveUrl: "https://dailyhive.com/vancouver/pho-and-roll-vancouver",
     liveLabel: "Project Coverage",
   },
   {
-    title: "Media and Influencer Marketing Campaigns",
+    title: "Corporate Booking Campaign and Media Partnerships",
     description:
-      "Supported editorial placements and creator partnerships to build awareness for Pho & Roll, using third-party credibility and social content to strengthen brand visibility and attract new audiences.",
-    tech: ["Media Partnerships", "Influencer Marketing", "Brand Awareness"],
+      "Designed and sold a corporate booking campaign for Pho & Roll using paid editorial in Daily Hive and Vancouver Magazine plus creator partnerships, generating $10K in revenue on $6.5K of spend (1.54x ROAS) and building credibility with new corporate and group audiences.",
+    tech: ["Campaign Strategy", "Media Partnerships", "Influencer Marketing", "ROAS"],
     liveUrl: "https://vanmag.com/taste/restaurants/this-modern-vietnamese-restaurant-is-perfect-for-your-next-corporate-event/",
     liveLabel: "Media Coverage",
     extraLinks: [
@@ -26,17 +26,25 @@ const projects = [
     ],
   },
   {
-    title: "Event Coordination and Brand Experience",
+    title: "Catering and Event Sales",
     description:
-      "Supported event coordination and guest-facing execution for Pho & Roll, shaping the in-person experience so the brand felt polished, memorable, and aligned with corporate and group dining positioning.",
-    tech: ["Event Coordination", "Brand Experience", "Guest Experience", "Execution"],
+      "Managed the inbound catering and event sales pipeline end to end, closing two summer 2025 weddings worth $10K through agenda-setting, follow-ups, and stakeholder coordination, while shaping a guest experience aligned with the brand's corporate and group-dining positioning.",
+    tech: ["Account Management", "Sales Pipeline", "Stakeholder Coordination", "Event Execution"],
     liveUrl: "https://www.instagram.com/p/DLd0SuDReFr/?img_index=1",
     liveLabel: "Event Example",
   },
   {
+    title: "Customer Insight and Brand Positioning for Beats by Dre",
+    description:
+      "Turned customer feedback into structured pain points, comparative themes, and positioning opportunities through market research and dashboard-based analysis, and delivered brand positioning recommendations to Beats by Dre leadership.",
+    tech: ["Consumer Insight", "Brand Positioning", "Market Research", "Dashboard Design"],
+    liveUrl: "pain-points-dashboard.png",
+    liveLabel: "Insight Dashboard",
+  },
+  {
     title: "Business Performance Reporting and Cost Automation at Sunrise Soya Foods",
     description:
-      "Built KPI dashboards, forecasting workflows, and an Excel-based electricity cost model using large operational datasets at Sunrise Soya Foods. I automated cost calculations from production inputs for a manufacturing site and translated the results into a presentation that explained the main cost drivers and supported operational decision-making.",
+      "Built KPI dashboards, forecasting workflows, and an Excel-based electricity cost model from large operational datasets at Sunrise Soya Foods, a consumer goods manufacturer. I automated cost calculations from production inputs for one site and translated the results into a presentation that explained the main cost drivers and supported operational decisions.",
     tech: ["Performance Reporting", "Forecasting", "KPI Dashboards", "Excel Automation", "Cost Analysis"],
     liveUrl: "powell_2026_analysis_electricity_729.pdf",
     liveLabel: "Cost Driver Deck",
@@ -46,14 +54,6 @@ const projects = [
         label: "Automated Excel Model",
       },
     ],
-  },
-  {
-    title: "Customer Insight and Brand Positioning for Beats by Dre",
-    description:
-      "Turned customer feedback into structured pain points, comparative themes, and positioning opportunities through market research and dashboard-based analysis.",
-    tech: ["Consumer Insight", "Brand Positioning", "Perplexity", "Dashboard Design"],
-    liveUrl: "pain-points-dashboard.png",
-    liveLabel: "Insight Dashboard",
   },
 ];
 
