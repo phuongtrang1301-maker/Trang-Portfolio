@@ -8,7 +8,7 @@ const projects = [
     liveLabel: "Project Coverage",
   },
   {
-    title: "Corporate Booking Campaign & Media Partnerships",
+    title: "Corporate Booking Campagn & Media Partnerships",
     description:
       "Designed, sold, and executed a corporate booking campaign using paid editorial placements (Daily Hive, Vancouver Magazine) and social media influencer partnerships. Generated $10K in revenue on $6.5K of spend (1.54x ROAS). Managed cross-functional coordination between media partners, operations, and front-of-house teams.",
     tech: ["Campaign Strategy", "Media Partnerships", "Influencer Marketing", "ROAS", "Paid Media"],
@@ -103,7 +103,7 @@ function revealOnScroll() {
   reveals.forEach((el) => {
     const top = el.getBoundingClientRect().top;
     if (top < windowHeight - 80) {
-      el.classList.add("visible");
+      el.classList.add("show");
     }
   });
 }
